@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="A respectful space for guests to share their own experience of care in a short, one-page post.">
+    <title>Community — Care, Heard</title>
+    <link rel="stylesheet" href="css/site.css">
+</head>
+<body>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <header class="site-header">
+        <a class="wordmark" href="index.html" aria-label="Care, Heard home">
+            <span class="wordmark-icon" aria-hidden="true">CH</span>
+            <span>Care, <strong>Heard</strong></span>
+        </a>
+        <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="primary-navigation">
+            <span class="sr-only">Open navigation</span>
+            <span></span><span></span><span></span>
+        </button>
+        <nav class="site-nav" id="primary-navigation" aria-label="Main navigation">
+            <a href="index.html">The blog</a>
+            <a href="about.html">About</a>
+            <a class="current" href="services.html" aria-current="page">Community</a>
+            <button class="theme-toggle" type="button" aria-pressed="false">Use red attention palette</button>
+            <a class="nav-join" href="#share">Share your story <span aria-hidden="true">↗</span></a>
+        </nav>
+        <span class="sr-only" id="theme-status" role="status" aria-live="polite"></span>
+    </header>
+
+    <main id="main">
+        <section class="page-intro">
+            <p class="eyebrow"><span class="eyebrow-line"></span> Many voices, one conversation</p>
+            <h1>There is room<br>for <em>your story.</em></h1>
+            <p>Care is personal. If you have experienced something you want others to understand, share your perspective here — in your own words and in your own time.</p>
+        </section>
+
+        <section class="community-layout" aria-labelledby="voices-heading">
+            <div class="voices-column">
+                <div class="section-heading voices-heading">
+                    <div>
+                        <p class="eyebrow"><span class="eyebrow-line"></span> Guest perspectives</p>
+                        <h2 id="voices-heading">Community <em>voices</em></h2>
+                    </div>
+                </div>
+                <div id="community-posts" class="community-posts" aria-live="polite">
+                    <div class="empty-state">
+                        <span aria-hidden="true">✳</span>
+                        <h3>Be the first to share</h3>
+                        <p>Guest stories will appear here after they are submitted. In this preview, stories are saved only in this browser.</p>
+                    </div>
+                </div>
+            </div>
+
+            <aside class="share-panel" id="share">
+                <p class="eyebrow"><span class="eyebrow-line"></span> Guest registration</p>
+                <h2>Share your <em>experience.</em></h2>
+                <p class="panel-intro">Register with a display name and write one short post. There is a maximum of one page per guest — up to 500 words.</p>
+
+                <div class="prototype-notice">
+                    <strong>Preview mode</strong>
+                    <p>This site has no server or account system yet. Your post is saved in this browser only and is not visible to other visitors. Do not include information that identifies you or someone else.</p>
+                </div>
+
+                <form id="guest-form">
+                    <label class="form-label" for="guest-name">Display name</label>
+                    <input id="guest-name" name="name" type="text" maxlength="50" autocomplete="nickname" placeholder="A name or pseudonym" required>
+
+                    <label class="form-label" for="guest-topic">What is your story about?</label>
+                    <select id="guest-topic" name="topic" required>
+                        <option value="" selected disabled>Choose a topic</option>
+                        <option value="Care experience">Care experience</option>
+                        <option value="Communication">Communication</option>
+                        <option value="Policies and access">Policies and access</option>
+                        <option value="Other">Other</option>
+                    </select>
+
+                    <label class="form-label" for="guest-title">Post title</label>
+                    <input id="guest-title" name="title" type="text" maxlength="90" placeholder="Give your story a title" required>
+
+                    <label class="form-label" for="guest-story">Your story <span class="label-hint">One page maximum</span></label>
+                    <textarea id="guest-story" name="story" rows="8" placeholder="Share only what you feel comfortable making public." required></textarea>
+                    <p class="word-count" id="word-count" aria-live="polite">0 / 500 words</p>
+
+                    <label class="consent-check">
+                        <input type="checkbox" name="consent" required>
+                        <span>I understand that this is a local preview and that I should avoid sharing identifying or confidential information.</span>
+                    </label>
+
+                    <button class="button button-dark form-submit" type="submit">Save my story <span aria-hidden="true">→</span></button>
+                    <p class="form-feedback" id="form-feedback" role="status" aria-live="polite"></p>
+                </form>
+            </aside>
+        </section>
+
+        <section class="community-guidelines">
+            <p class="eyebrow"><span class="eyebrow-line"></span> A few ground rules</p>
+            <h2>Keep it <em>respectful.</em></h2>
+            <div class="guideline-grid">
+                <p><span>01</span> Speak from your own experience. Different people can experience the same service differently.</p>
+                <p><span>02</span> Protect privacy. Leave out names, contact details and information that could identify patients or staff.</p>
+                <p><span>03</span> Be kind. No harassment, threats or personal attacks. This is a place for experiences, not medical advice.</p>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <a class="wordmark wordmark-footer" href="index.html"><span class="wordmark-icon" aria-hidden="true">CH</span><span>Care, <strong>Heard</strong></span></a>
+        <p>A personal blog and a space for patient voices.</p>
+        <nav aria-label="Footer navigation"><a href="index.html">The blog</a><a href="about.html">About</a><a href="services.html">Community</a></nav>
+        <span class="footer-credit">Made for honest, respectful conversation.</span>
+    </footer>
+    <script src="js/site.js"></script>
+</body>
+</html>
