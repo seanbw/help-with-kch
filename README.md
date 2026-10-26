@@ -27,6 +27,7 @@ IP geolocation is approximate: VPNs, proxies and network routing can affect the 
 - `index.html` — the author's journal and an introduction to the community.
 - `about.html` — the purpose and principles of the site.
 - `services.html` — the guest-story form and community space.
+- `story.html` — continuation of the authors recounting of what he went through.
 - `css/site.css` — responsive styles.
 - `js/site.js` — mobile navigation, blog audio controls and the guest-form prototype.
 - `worker.js` — Cloudflare Worker that enforces the country restriction and serves static assets.
