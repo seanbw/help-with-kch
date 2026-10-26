@@ -11,7 +11,7 @@ The site is prepared to deploy to the existing Cloudflare Worker named `help-wit
 To deploy automatically from GitHub, connect the existing Worker to this repository:
 
 1. In Cloudflare, open **Workers & Pages → help-with-kch → Settings → Builds → Connect**.
-2. Select the GitHub repository `helpwithkch/Brickworks-Template` and production branch `main`.
+2. Select the GitHub repository `help-with-kch` and production branch `main`.
 3. Set the root directory to the repository root (or leave it blank), leave the build command empty, and use the default deploy command `npx wrangler deploy`.
 4. Before saving, confirm the Worker configuration name in `wrangler.jsonc` matches `help-with-kch`. Cloudflare requires this exact name to deploy from Git.
 5. Run the build/deployment. Once it succeeds, visit `https://help-with-kch.co.uk` and check the home page, styling, navigation and community form.
@@ -39,11 +39,11 @@ Each journal post has a **Listen to text** button that uses the browser's built-
 
 ## Guest-story prototype
 
-The community form accepts one post of up to 500 words per browser. Posts use a display name and are saved to that browser's local storage. There is no server, real account registration, moderation workflow or cross-visitor sharing in this static version. A real community site needs a server-side account and submission system, secure storage, and moderation before guest stories can be shared publicly.
+The community form accepts one post of up to 500 words per browser. Posts use a display name (registration email) and are saved to the sites database. With GDPR/Privacy rules, users can request for their data to be deleted.  All site registrations require a users email and passwords and it is only after a successful registration that users are allowed to upload their stories. 
+The site intends to accummulate users with genuine complaints similar to the site authors and push for a joint remedy. Users are enjoined to remember that frivolous and unnecessary complaints will impair other users access to sound remedies. 
+This is a real community site with a secure server, server-side account and submission system, secure storage, and moderation before guest stories can be shared with complained hospitals and health institutions.
 
-The form intentionally does not request email addresses or passwords. Visitors should not include identifying or confidential information in their stories.
+Users are enjoined to remember that the form intentionally requests  personal information suh as email addresses, passwords, diagnosis, hospital data and nhs number because without these, not much can be achieved on their behalf.  
+Please remember the whole point of the site is to seek and provide relief for those who have been ignored by their healthcare professionals and have therefore suffered , usually at the hands of those who are supposed to alleviate that exact suffering calling into question the judgement, motive and professionalism of those same professionals.
 
-## Run locally
-
-Open `index.html` in a browser, or serve the project directory with any static web server. No build step or package installation is required.
 "# help-with-kch" 
